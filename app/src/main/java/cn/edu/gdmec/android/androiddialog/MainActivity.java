@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         prodialog.setIcon ( R.mipmap.ic_launcher );
         prodialog.setMessage ( "正在下载，请稍后" );
 
+        prodialog.setProgressStyle ( ProgressDialog.STYLE_HORIZONTAL );
         prodialog.show ();
     }
 }
