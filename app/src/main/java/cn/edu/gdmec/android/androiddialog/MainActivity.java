@@ -1,7 +1,7 @@
 package cn.edu.gdmec.android.androiddialog;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
        //创建多选对话框
-        AlertDialog dialog = new AlertDialog.Builder ( this ).setTitle ( "请添加兴趣爱好" )
+       /* AlertDialog dialog = new AlertDialog.Builder ( this ).setTitle ( "请添加兴趣爱好" )
 
                 .setIcon ( R.mipmap.ic_launcher )//设置图标
                 .setPositiveButton ( "确定",null )//添加确定按钮
@@ -44,7 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 .setMultiChoiceItems ( new String[]{"汽车1","汽车2","汽车3","汽车4",},null,null)
                 .create ();
 
-        dialog.show();
+        dialog.show();*/
 
+       //创建进度条对话框
+        ProgressDialog prodialog = new ProgressDialog ( this );
+        prodialog.setTitle ( "进度条对话框" );
+        prodialog.setIcon ( R.mipmap.ic_launcher );
+        prodialog.setMessage ( "正在下载，请稍后" );
+
+        prodialog.show ();
     }
 }
