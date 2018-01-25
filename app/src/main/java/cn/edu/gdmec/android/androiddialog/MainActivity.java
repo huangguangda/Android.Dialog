@@ -1,6 +1,5 @@
 package cn.edu.gdmec.android.androiddialog;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -47,12 +46,23 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();*/
 
        //创建进度条对话框
-        ProgressDialog prodialog = new ProgressDialog ( this );
+       /* ProgressDialog prodialog = new ProgressDialog ( this );
         prodialog.setTitle ( "进度条对话框" );
         prodialog.setIcon ( R.mipmap.ic_launcher );
         prodialog.setMessage ( "正在下载，请稍后" );
 
         prodialog.setProgressStyle ( ProgressDialog.STYLE_HORIZONTAL );
-        prodialog.show ();
+        prodialog.show ();*/
+
+        //消息对话框 吐司
+
+        /*Toast.makeText ( this, "hello", Toast.LENGTH_LONG ).show ();*/
+
+        //自定义
+        MyDialog myDialog = new MyDialog(this,"我是自定义对话框");
+
+        myDialog.show();
+
+
     }
 }
