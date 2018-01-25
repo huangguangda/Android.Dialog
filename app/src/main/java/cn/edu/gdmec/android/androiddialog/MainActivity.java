@@ -1,8 +1,7 @@
 package cn.edu.gdmec.android.androiddialog;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.show ();*/
 
         //单选对话框
-        AlertDialog dialog = new AlertDialog.Builder ( this ).setTitle ( "请选择性别" )
+       /* AlertDialog dialog = new AlertDialog.Builder ( this ).setTitle ( "请选择性别" )
                 .setIcon ( R.mipmap.ic_launcher )//设置图标
                 .setPositiveButton ( "确定",null )//添加确定按钮
                 .setSingleChoiceItems ( new String[]{"男", "女"}, -1, new DialogInterface.OnClickListener () {
@@ -33,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
                     }
                 } ).create ();
 
-        dialog.show ();
+        dialog.show ();*/
+
+
+       //创建多选对话框
+        AlertDialog dialog = new AlertDialog.Builder ( this ).setTitle ( "请添加兴趣爱好" )
+
+                .setIcon ( R.mipmap.ic_launcher )//设置图标
+                .setPositiveButton ( "确定",null )//添加确定按钮
+
+                .setMultiChoiceItems ( new String[]{"汽车1","汽车2","汽车3","汽车4",},null,null)
+                .create ();
+
+        dialog.show();
+
     }
 }
