@@ -15,6 +15,7 @@ import android.widget.TextView;
 public class MyDialog extends Dialog {
 
     private String dialogMane;
+
     private TextView tvMsg;
     private Button btnOk;
     private Button btnCancel;
@@ -31,6 +32,7 @@ public class MyDialog extends Dialog {
         setContentView ( R.layout.my_dialog );
 
         tvMsg = (TextView) findViewById ( R.id.tv_msg );
+
         btnOk = (Button) findViewById ( R.id.btn_ok );
         btnCancel = (Button) findViewById ( R.id.btn_cancel );
 
