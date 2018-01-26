@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
         //自定义
         MyDialog myDialog = new MyDialog(this,"我是自定义对话框");
-
         myDialog.show();
 
 
