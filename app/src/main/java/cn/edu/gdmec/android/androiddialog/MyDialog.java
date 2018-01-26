@@ -17,7 +17,7 @@ public class MyDialog extends Dialog {
     private String dialogMane;
     private TextView tvMsg;
     private Button btnOk;
-    private Bundle btnCancel;
+    private Button btnCancel;
 
     public MyDialog(Context context,String dialogMane){
         super(context);
